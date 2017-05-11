@@ -15,6 +15,16 @@ app.use('/', function(req, res) {
   res.sendFile(path.join(__dirname, './public/views/index.html'));
 });
 
+app.get( '/getHighFives', function( req, res )
+{
+console.log( 'getHighFives route HIT!' );
+
+});
+
+app.post( '/', function( req, res ) {
+
+});
+
 app.listen(3000, function() {
   console.log("server running, check localhost:3000");
 });
